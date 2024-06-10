@@ -93,7 +93,7 @@ apt-get install -y --no-install-recommends \
   autoconf \
   automake \
   bc \
-  clang \
+  libclang-dev \
   cpio \
   cppcheck \
   device-tree-compiler \
