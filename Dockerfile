@@ -108,6 +108,7 @@ apt-get install -y --no-install-recommends \
   kmod \
   libasound2-dev \
   libavahi-compat-libdnssd-dev \
+  libbison-dev \
   libboost-all-dev \
   libcurl4-openssl-dev \
   libncurses5-dev \
