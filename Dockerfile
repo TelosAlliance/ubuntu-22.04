@@ -100,6 +100,7 @@ apt-get install -y --no-install-recommends \
   elfutils \
   file \
   gawk \
+  gcovr \
   gdb \
   gettext \
   git \
