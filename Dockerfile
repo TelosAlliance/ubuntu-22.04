@@ -126,6 +126,7 @@ apt-get install -y --no-install-recommends \
   pandoc \
   rsync \
   shellcheck \
+  sshpass \
   swig \
   time \
   unzip \
