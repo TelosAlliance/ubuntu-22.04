@@ -131,6 +131,7 @@ apt-get install -y --no-install-recommends \
   rsync \
   shellcheck \
   software-properties-common \
+  sshpass \
   swig \
   time \
   unzip \
