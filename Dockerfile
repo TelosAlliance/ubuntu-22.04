@@ -108,6 +108,7 @@ apt-get install -y --no-install-recommends \
   libboost-all-dev \
   libcurl4-openssl-dev \
   libncurses5-dev \
+  libpcap-dev \
   libsndfile1-dev \
   libssl-dev \
   libtool \
