@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.3-labs
 # vim:syntax=dockerfile
-FROM ubuntu:jammy-20220801
+FROM ubuntu:jammy-20240627.1
 
 # Set this before `apt-get` so that it can be done non-interactively
 ENV DEBIAN_FRONTEND noninteractive
@@ -70,6 +70,8 @@ cargo install cargo-deny
 cargo install cargo-license
 cargo install cargo-lichking
 cargo install cargo-script
+cargo install cargo-deb
+cargo install cargo-generate-rpm
 rustup target add x86_64-unknown-linux-musl
 rustup target add armv7-unknown-linux-gnueabihf
 rm -rf "$RUST_HOME/registry" "$RUST_HOME/git"
@@ -91,20 +93,24 @@ apt-get install -y --no-install-recommends \
   autoconf \
   automake \
   bc \
+  libclang-dev \
   cpio \
   cppcheck \
   device-tree-compiler \
   elfutils \
   file \
   gawk \
+  gcovr \
   gdb \
   gettext \
   git \
+  git-lfs \
   gosu \
   jq \
   kmod \
   libasound2-dev \
   libavahi-compat-libdnssd-dev \
+  libbison-dev \
   libboost-all-dev \
   libcurl4-openssl-dev \
   libncurses5-dev \
@@ -121,6 +127,7 @@ apt-get install -y --no-install-recommends \
   pandoc \
   rsync \
   shellcheck \
+  sshpass \
   swig \
   time \
   unzip \
