@@ -69,7 +69,6 @@ cargo install cargo-bundle-licenses
 cargo install cargo-deny
 cargo install cargo-license
 cargo install cargo-lichking
-cargo install cargo-script
 rustup target add x86_64-unknown-linux-musl
 rustup target add armv7-unknown-linux-gnueabihf
 rm -rf "$RUST_HOME/registry" "$RUST_HOME/git"
