@@ -85,8 +85,11 @@ apt-get install -y --no-install-recommends \
   libgstreamer-plugins-bad1.0-dev \
   libjson-glib-dev \
   libsoup2.4-dev
+# add Ansible repository
+add-apt-repository --yes --update ppa:ansible/ansible
 # Install everything else
 apt-get install -y --no-install-recommends \
+  ansible \
   autoconf \
   automake \
   bc \
@@ -120,6 +123,7 @@ apt-get install -y --no-install-recommends \
   pandoc \
   rsync \
   shellcheck \
+  software-properties-common \
   swig \
   time \
   unzip \
