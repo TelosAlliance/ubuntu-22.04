@@ -69,7 +69,6 @@ cargo install cargo-bundle-licenses
 cargo install cargo-deny
 cargo install cargo-license
 cargo install cargo-lichking
-cargo install cargo-script
 cargo install cargo-deb
 cargo install cargo-generate-rpm
 rustup target add x86_64-unknown-linux-musl
