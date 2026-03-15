@@ -1,29 +1,29 @@
 # syntax=docker/dockerfile:1.3-labs
 # vim:syntax=dockerfile
-FROM ubuntu:jammy-20240627.1
+FROM ubuntu:jammy-20260210.1
 
 # Set this before `apt-get` so that it can be done non-interactively
-ENV DEBIAN_FRONTEND noninteractive
-ENV TZ America/New_York
-ENV LC_ALL C.UTF-8
-ENV LANG C.UTF-8
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=America/New_York
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 # Golang env
-ENV GOROOT /opt/go
-ENV GOPATH $HOME/work/
+ENV GOROOT=/opt/go
+ENV GOPATH=$HOME/work/
 
 # Rust env
-ENV RUST_HOME /opt/rust
-ENV CARGO_HOME $RUST_HOME
-ENV RUSTUP_HOME $RUST_HOME/.rustup
+ENV RUST_HOME=/opt/rust
+ENV CARGO_HOME=$RUST_HOME
+ENV RUSTUP_HOME=$RUST_HOME/.rustup
 
 # NodeJS env
-ENV NODE_VERSION v16.13.0
-ENV NODE_BUILD node-$NODE_VERSION-linux-x64
-ENV NODE_BIN /opt/node-$NODE_VERSION-linux-x64/bin
+ENV NODE_VERSION=v16.13.0
+ENV NODE_BUILD=node-$NODE_VERSION-linux-x64
+ENV NODE_BIN=/opt/node-$NODE_VERSION-linux-x64/bin
 
 # Set PATH to include custom bin directories
-ENV PATH $GOPATH/bin:$GOROOT/bin:$RUST_HOME/bin:$NODE_BIN:$PATH
+ENV PATH=$GOPATH/bin:$GOROOT/bin:$RUST_HOME/bin:$NODE_BIN:$PATH
 
 # KEEP PACKAGES SORTED ALPHABETICALY
 # Do everything in one RUN command
